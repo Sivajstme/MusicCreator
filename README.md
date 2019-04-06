@@ -1,4 +1,4 @@
 # MusicCreator
 A simple javaScript file used to
-Create Music,
+Create Music
 Record created music and download
