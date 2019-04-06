@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montez', cursive;
+    background: aliceblue;
+
+}
+.app{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.pads{
+    width: 100%;
+    background-color: aqua;
+    opacity: 0.9;
+    display: flex;
+    
+}
+header h1{
+    margin: 50px 0px 30px 0px;
+    text-align: center;
+    font-size: 40px;
+}
+header p {
+    font-size: 20px;
+}
+.pads > div{
+    height: 100px;
+    width: 100px;
+    flex: 1;
+}
+.pad1{
+    background: #60d394;
+}
+.pad2{
+    background: #d36060;
+
+}
+.pad3{
+    background: #c060d3;
+
+}
+.pad4{
+    background: #d3d160;
+
+}
+.pad5{
+    background: #6860d3;
+
+}
+.pad6{
+    background: #60d2d3;
+
+}
+.visual > div{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    bottom: 0%;
+    left: 20%;
+    bottom: 0%;
+    z-index: -1;
+}
+.hand{
+    position: relative;
+    animation: btnAnim 2s;
+    animation-iteration-count: infinite;
+}
+.btn-record{
+    margin-bottom: 10em;
+    text-align:center;
+}
+#recordButton{
+    border: 2px solid none;
+    border-radius: 10%;
+    background-color: #60d2d3;
+    font-family: 'Montez', cursive;
+    font-size: 23px;
+    border-radius: 10px;
+    width: 5em;
+    height: 2em;
+}
+.dwnload{
+    display: flex;
+    margin-top: 10px;
+}
+button,audio:focus {outline:0;}
+
+@keyframes jump{
+    0%{
+        bottom: 0%;
+        left: 20%;
+    }
+    50%{
+        bottom: 50%;
+        left: 50%;
+    }
+    100%{
+        bottom: 0%;
+        left: 80%;
+    }
+}
+
+@keyframes btnAnim {
+    0%{
+        top: 0%;
+    }
+    100%{
+        top: 6%;
+        opacity: 0;
+    }
+}
